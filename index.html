@@ -36,315 +36,265 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+            <section>
+                <section>
+                    <h1>Augusta Warrior Project</h1>
+                    <h3>Introduction to Web Development</h3>
+                    <p>
+                        <small>Created by <a href="http://palantir.net/about/team/chris-zietlow">Chris Zietlow</a> / <a href="http://twitter.com/aczietlow">@aczietlow</a> / aczietlow@gmail.com</small>
+                    </p>
+                    <p>
+                        <small>Sponsored by <a href="http://theclubhou.se/">The Clubhouse</a></small>
+                    </p>
+                </section>
+                <section>
+                    <h3>About me</h3>
+                    <ul>
+                        <li>PHP developer for <a href="http://palantir.net">Palantir.net</a></li>
+                        <li>Owner of <a href="http://www.spyderbytedesign.com/">Spyder Byte Design</a></li>
+                        <li>Member of <a href="http://theclubhou.se/">Clubhouse</a></li>
+                        <li>Co-organizer of <a href="http://www.meetup.com/Augusta-Linux-User-Group/">Aug Linux User Group</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>About the Clubhouse</h3>
+                    <p>We are quite literally a clubhouse, a dojo even. Members pay dues. We run events and classes, and buy tools based on what our members want and need to build a project, improve themselves, start a business, or give back to the community.</p>
+                    <p>One of the clubs at the club house may interest you. <a href="http://www.meetup.com/RefreshAugusta/">Refresh Augusta</a> are a group of media and web professionals in the Augusta area.</p>
+                </section>
+                <section>
+                    <h3>This Class</h3>
+                    <p>What we're going to cover in this class.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript*</li>
+                        <li>jQuery</li>
+                        <li>version control</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Javascript</h3>
+                    <p>JavaScript is a Scripting Language</p>
+                    <ul>
+                        <li>A scripting language is a lightweight programming language.</li>
+                        <li>JavaScript is programming code that can be inserted into HTML pages.</li>
+                        <li>JavaScript code can be executed by all modern web browsers.</li>
+                        <li>JavaScript is easy to learn. (yay!)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Getting started</h3>
+                    <p>You can use javascript to write new elements to your html page.</p>
+                    <pre><code data-trim contenteditable>
+&ltscript&gt
+    document.write("&lth1&gtThis is a heading&lt/h1&gt");
+    document.write("&ltp&gthis is a paragraph.&lt/p&gt");
+&lt/script&gt
+                    </code></pre>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+                </section>
+                <section>
+                    <h3>Getting started</h3>
+                    <p>Javascript can react to events.</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+                      <pre><code data-trim contenteditable>
+&lt;button type=&quot;button&quot; onclick=&quot;alert('Welcome!')&quot;&gt;Click Me!&lt;/button&gt;
+                      </code></pre>
+                </section>
+                <section>
+                    <h3>Getting started</h3>
+                    <p>Javascript can change content!</p>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                      <pre><code data-trim contenteditable>
+x=document.getElementById(&quot;demo&quot;)  //Find the element
+x.innerHTML=&quot;Hello JavaScript&quot;;    //Change the content
+                      </code></pre>
+                </section>
+                <section>
+                    <h3>Getting started</h3>
+                    <p>Let's add some javascript to our page!</p>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+                      <pre><code data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+&lt;p&gt;
+Using javascript we can write directly to the html document.
+&lt;/p&gt;
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+&lt;script&gt;
+document.write(&quot;&lt;h1&gt;heading&lt;/h1&gt;&quot;);
+document.write(&quot;&lt;p&gt;New content&lt;/p&gt;&quot;);
+&lt;/script&gt;
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+&lt;/body&gt;
+&lt;/html&gt;
+                      </code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>JavaScript Statements</h3>
+                    <ul>
+                        <li>JavaScript statements are "commands" to the browser.</li>
+                        <li>The purpose of the statements is to tell the browser what to do.</li>
+                        <li>This JavaScript statement tells the browser to write "Hello Dolly" inside an HTML element with id="demo":</li>
+                    </ul>
+                    <pre><code data-trim contenteditable>
+document.getElementById("demo").innerHTML="Hello Augusta";
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>Semicolon ;</h3>
+                    <ul>
+                        <li>Semicolon separates JavaScript statements.</li>
+                        <li>Normally you add a semicolon at the end of each executable statement.</li>
+                    </ul>
+                    <pre><code data-trim contenteditable>
+alert("hello world");
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>JavaScript Code</h3>
+                    <ul>
+                        <li>JavaScript code (or just JavaScript) is a sequence of JavaScript statements.</li>
+                        <li>Each statement is executed by the browser in the sequence they are written.</li>
+                        <li>This example will manipulate two HTML elements:</li>
+                    </ul>
+                    <pre><code data-trim contenteditable>
+document.getElementById("demo").innerHTML="Hello Augusta";
+document.getElementById("myDIV").innerHTML="How are you?";
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>JavaScript Code Blocks</h3>
+                    <ul>
+                        <li>JavaScript statements can be grouped together in blocks.</li>
+                        <li>Blocks start with a left curly bracket, and end with a right curly bracket.</li>
+                        <li>The purpose of a block is to make the sequence of statements execute together.</li>
+                        <li>A good example of statements grouped together in blocks, are JavaScript functions.</li>
+                        <li>This example will run a function that will manipulate two HTML elements:</li>
+                    </ul>
+                    <pre><code data-trim contenteditable>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="Hello Augusta";
+document.getElementById("myDIV").innerHTML="How are you?";
 }
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>JavaScript function example:</h3>
+                    <pre><code data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+&lt;script&gt;
+function myFunction()
+{
+document.getElementById("demo").innerHTML="Hello Augusta";
+document.getElementById("myDIV").innerHTML="How are you?";
+}
+&lt;/script&gt;
 
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+&lt;h1 id=&quot;demo&quot;&gt;My heading&lt;/h1&gt;
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+&lt;div id=&quot;myDIV&quot;&gt;Insert Content here&lt;/div&gt;
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+&lt;button value=&quot;click me&quot; onclick=&quot;myFunction();&quot;&gt;Click Me&lt;/button&gt;
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+&lt;/body&gt;
+&lt;/html&gt;
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>JavaScript Functions and Events</h3>
+                    <ul>
+                        <li>The JavaScript statements, in the example above, are executed while the page loads.</li>
+                        <li>More often, we want to execute code when an event occurs, like when the user clicks a button.</li>
+                        <li>If we put JavaScript code inside a function, we can call that function when an event occurs.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Case Sensitive</h3>
+                    <ul>
+                        <li>JavaScript is case sensitive.</li>
+                        <li>Watch your capitalization closely when you write JavaScript statements:</li>
+                        <li>A function getElementById is not the same as getElementbyID.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Example</h3>
+                    <ul>
+                        <li>Create a simple html page with an image.</li>
+                        <li>Create a javascript function that uses the alert function</li>
+                        <li>Add an onclick attribute to the html image tag, and set the value to your javascript function name</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Example Explained</h3>
+                    <pre><code data-trim contenteditable>
+&lt;html&gt;
+&lt;body&gt;
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+&lt;script&gt;
+function meow() {
+alert(&quot;Cat says meow&quot;);
+}
+&lt;/script&gt;
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+&lt;img width=&quot;150&quot; onclick=&quot;meow();&quot; src=&quot;http://2.bp.blogspot.com/-wNG9jajTdTk/T9d7gtvm4mI/AAAAAAAANOY/X5eZH3wqkNs/s1600/funny-cat-pictures-part-2-06-13-2012-016.jpg&quot;  /&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt
+                    </code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Date Example</h3>
+                    <pre><code data-trim contenteditable>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;script&gt;
+var date = new Date();
+document.getElementById(&quot;date&quot;).innerHTML=date;
+&lt;/script&gt;
+
+&lt;h3 id=&quot;date&quot;&gt;My heading&lt;/h1&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>crazy examples</h3>
+                    <ul>
+                        <li><a href="http://codepen.io/soulwire/pen/foktm">sketch.js</a></li>
+                        <li><a href="http://codepen.io/TimPietrusky/pen/eHGfj">star wars</a></li>
+                        <li><a href="http://codepen.io/TimPietrusky/pen/CxiHF">job generater</a></li>
+                        <li><a href="http://www.spyderbytedesign.com/">Spyder Byte Design</a></li>
+                        <li><a href="http://www.spyderbytedesign.com/team-member/alaina">Spyder Byte Design</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Carry on my wayward son...</h3>
+                    <ul>
+                        <li><a href=http://www.codecademy.com/tracks/javascript">javascript on code academy</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Getting_Started?redirectlocale=en-US&redirectslug=JavaScript%2FGetting_Started">Mozilla javacript lessons</a></li>
+                    </ul>
+                </section>
+            </section>
+
+
 
 			</div>
 
